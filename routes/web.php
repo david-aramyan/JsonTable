@@ -11,4 +11,8 @@
 |
 */
 
+Route::get('/','JsonTableController@index');
 
+Route::post('/add_new_product' , 'JsonTableController@addProduct');
+
+Route::get('/get_products' , 'JsonTableController@getProducts');
